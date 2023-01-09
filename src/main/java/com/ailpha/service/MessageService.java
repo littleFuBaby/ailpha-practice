@@ -1,4 +1,4 @@
-package org.fuys.ownrapi.service;
+package com.ailpha.service;
 
 public interface MessageService {
 	

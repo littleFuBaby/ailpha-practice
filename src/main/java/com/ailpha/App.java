@@ -1,4 +1,4 @@
-package org.fuys.ownrapi;
+package com.ailpha;
 
 /**
  * Hello world!

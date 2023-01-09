@@ -5,7 +5,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ailpha</groupId>
 	<artifactId>ailpha-practice</artifactId>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
-	<name>ownrapi</name>
+	<name>ailpha-practice</name>
 	<url>http://maven.apache.org</url>
 </project>

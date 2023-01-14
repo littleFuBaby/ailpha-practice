@@ -10,13 +10,19 @@ public class CommonDivisor {
         System.out.println(commonDivisor.gcd1(16, 12));
         System.out.println(commonDivisor.gcd2(16, 12));
         System.out.println(commonDivisor.gcd3(16, 12));
+        System.out.println(commonDivisor.gcd4(16, 12));
         System.out.println(commonDivisor.gcd1(6, 16));
         System.out.println(commonDivisor.gcd2(6, 16));
         System.out.println(commonDivisor.gcd3(6, 16));
         System.out.println(commonDivisor.gcd1(16, 6));
         System.out.println(commonDivisor.gcd2(16, 6));
         System.out.println(commonDivisor.gcd3(16, 6));
+        System.out.println(commonDivisor.gcd4(16, 6));
         System.out.println(commonDivisor.gcd3(2, 2));
+    }
+
+    public int gcd4(int num1, int num2) {
+        return num2 == 0 ? num1 : gcd4(num2, num1 % num2);
     }
 
     public int gcd3(int num1, int num2) {

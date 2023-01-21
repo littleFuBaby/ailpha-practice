@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class GenerateParenthesisDC {
+public class SolutionDemo {
 
     public List<String> generateParenthesis(int n) {
         return new ArrayList<String>(generateParenthesis(n, null));

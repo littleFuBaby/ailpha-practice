@@ -1,10 +1,8 @@
 package com.ailpha.leetcode.p20;
 
-import org.apache.commons.lang.StringUtils;
-
 import java.util.Stack;
 
-public class IsValidBrackets_Stack {
+public class SolutionDemo {
 
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();

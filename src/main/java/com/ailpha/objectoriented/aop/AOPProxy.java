@@ -37,7 +37,7 @@ public class AOPProxy {
 	 * @param point 传递参数的对象
 	 * @throws Throwable 
 	 */
-	public void arroundAdvice(ProceedingJoinPoint point) throws Throwable{
+	public void arroundAdvice(ProceedingJoinPoint point) throws Throwable {
 		// 通过ProceedingJoinPoint对象进行参数的传递
 		logger.info("++++++++ args is " + Arrays.toString(point.getArgs()));
 		Object obj = point.proceed(point.getArgs());

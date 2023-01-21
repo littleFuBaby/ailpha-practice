@@ -32,7 +32,7 @@ class Java implements Cloneable {
 	
 }
 
-public class CloneableInstance {
+public class CloneableDemo {
 	
 	public static void main(String[] args) throws CloneNotSupportedException {
 		Object obj = new Java("clone");

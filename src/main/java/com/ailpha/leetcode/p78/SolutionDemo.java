@@ -1,11 +1,9 @@
 package com.ailpha.leetcode.p78;
 
-import org.omg.CORBA.INTERNAL;
-
 import java.util.LinkedList;
 import java.util.List;
 
-public class SubSets {
+public class SolutionDemo {
 
     public List<List<Integer>> subsets(int[] nums) {
 

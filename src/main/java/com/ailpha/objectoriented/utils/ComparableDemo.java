@@ -32,7 +32,7 @@ class Ship implements Comparable<Ship> {
 	}
 }
 
-public class ComparableInstance {
+public class ComparableDemo {
 
 	public static void main(String[] args) {
 		// comparable with treeset

@@ -29,6 +29,15 @@ public class MapDemo {
         maps.put(new Goods("java", 2.5), new Goods("india", 3.5));
         maps.put(new Goods("java", 2.5), new Goods("india", 3.5));
         maps.put(new Goods("coco", 4.5), new Goods("pepsi", 3.5));
+
+        // keys
+        // keySet
+        Set<Goods> set = maps.keySet();
+        for (Goods goods : set) {
+            System.out.println(goods);
+        }
+
+        // entrySet
         Set<Map.Entry<Goods, Goods>> entry = maps.entrySet();
         Iterator<Map.Entry<Goods, Goods>> iter = entry.iterator();
         while (iter.hasNext()) {

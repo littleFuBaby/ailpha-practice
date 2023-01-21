@@ -1,6 +1,6 @@
 package com.ailpha.objectoriented.thread;
 
-import com.ailpha.common.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 class MyRunnable implements Runnable {
 	

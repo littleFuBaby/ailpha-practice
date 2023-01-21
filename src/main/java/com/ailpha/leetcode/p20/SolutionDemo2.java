@@ -1,10 +1,10 @@
-package com.ailpha.leetcode.p22;
+package com.ailpha.leetcode.p20;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Stack;
 
-public class IsValidBrackets {
+public class SolutionDemo2 {
 
     public boolean isValid(String s) {
         if (StringUtils.isEmpty(s)) {

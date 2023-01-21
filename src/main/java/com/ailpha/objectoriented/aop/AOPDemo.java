@@ -1,20 +1,15 @@
 package com.ailpha.objectoriented.aop;
 
-//import org.slf4j.LoggerFactory;
-//import org.springframework.context.ApplicationContext;
-//import org.springframework.context.support.ClassPathXmlApplicationContext;
-//import org.springframework.stereotype.Component;
-//
-//import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
 
-import java.util.logging.Logger;
-
-//@Component
+@Component
 public class AOPDemo {
 
-    private Logger logger = null;
-
-//	private Logger logger = LoggerFactory.getLogger(AOPDemo.class);
+    private Logger logger = LoggerFactory.getLogger(AOPDemo.class);
 
     public void execute() {
         logger.info("Must be a great executer");
@@ -44,14 +39,15 @@ public class AOPDemo {
     }
 
     public static void main(String[] args) throws Exception {
-//		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-//		if(context.containsBean("AOPDemo")){
-////			context.getBean("AOPDemo",AOPDemo.class).execute();
-////			context.getBean("AOPDemo",AOPDemo.class).execute("I love you!");;
-////			context.getBean("AOPDemo",AOPDemo.class).executeException();
-////			context.getBean("AOPDemo",AOPDemo.class).catchException();
-//			context.getBean("AOPDemo",AOPDemo.class).executeArround(" study ", " research ");
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        if (context.containsBean("AOPDemo")) {
+            context.getBean("AOPDemo", AOPDemo.class).execute();
+            context.getBean("AOPDemo", AOPDemo.class).execute("I love you!");
+            ;
+            context.getBean("AOPDemo", AOPDemo.class).executeException();
+            context.getBean("AOPDemo", AOPDemo.class).catchException();
+            context.getBean("AOPDemo", AOPDemo.class).executeArround(" study ", " research ");
+        }
     }
 }
-
 

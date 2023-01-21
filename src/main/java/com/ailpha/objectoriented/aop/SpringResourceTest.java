@@ -1,10 +1,8 @@
 package com.ailpha.objectoriented.aop;
 
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
-//import org.springframework.context.ApplicationContext;
-//import org.springframework.context.support.ClassPathXmlApplicationContext;
-//import org.springframework.core.io.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.core.io.*;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -16,27 +14,27 @@ import java.util.Scanner;
  */
 public class SpringResourceTest {
 	
-//	private Resource[] resources;
-//
-//	private Resource resource;
-//
-//	public Resource[] getResources() {
-//		return resources;
-//	}
-//
-//	public void setResources(Resource[] resources) {
-//		this.resources = resources;
-//	}
-//
-//	public Resource getResource() {
-//		return resource;
-//	}
-//
-//	public void setResource(Resource resource) {
-//		this.resource = resource;
-//	}
-//
-//	private static Logger logger = LoggerFactory.getLogger(SpringResourceTest.class);
+	private Resource[] resources;
+
+	private Resource resource;
+
+	public Resource[] getResources() {
+		return resources;
+	}
+
+	public void setResources(Resource[] resources) {
+		this.resources = resources;
+	}
+
+	public Resource getResource() {
+		return resource;
+	}
+
+	public void setResource(Resource resource) {
+		this.resource = resource;
+	}
+
+	private static Logger logger = LoggerFactory.getLogger(SpringResourceTest.class);
 
 	/**
 	 * operate byte array from memory
@@ -44,14 +42,14 @@ public class SpringResourceTest {
 	 * @throws IOException 
 	 */
 	public static void readAndDisplayByteArray(String str) throws IOException{
-//		Resource resource = new ByteArrayResource(str.getBytes());
-//		if(resource.exists()){
-//			Scanner scanner = new Scanner(resource.getInputStream());
-//			while(scanner.hasNext()){
-//				logger.info(scanner.nextLine());
-//			}
-//			scanner.close();
-//		}
+		Resource resource = new ByteArrayResource(str.getBytes());
+		if(resource.exists()){
+			Scanner scanner = new Scanner(resource.getInputStream());
+			while(scanner.hasNext()){
+				logger.info(scanner.nextLine());
+			}
+			scanner.close();
+		}
 	}
 	
 	/**
@@ -60,14 +58,14 @@ public class SpringResourceTest {
 	 * @throws IOException 
 	 */
 	public static void readFile(String filePath) throws IOException{
-//		Resource resource = new FileSystemResource(filePath);
-//		if(resource.exists()){
-//			Scanner scanner = new Scanner(resource.getInputStream());
-//			while(scanner.hasNext()){
-//				logger.info(scanner.nextLine());
-//			}
-//			scanner.close();
-//		}
+		Resource resource = new FileSystemResource(filePath);
+		if(resource.exists()){
+			Scanner scanner = new Scanner(resource.getInputStream());
+			while(scanner.hasNext()){
+				logger.info(scanner.nextLine());
+			}
+			scanner.close();
+		}
 	}
 	
 	/**
@@ -76,14 +74,14 @@ public class SpringResourceTest {
 	 * @throws IOException 
 	 */
 	public static void readFileFromClassPath(String fileNameOrRelativeFilePath) throws IOException{
-//		Resource resource = new ClassPathResource(fileNameOrRelativeFilePath);
-//		if(resource.exists()){
-//			Scanner scanner = new Scanner(resource.getInputStream());
-//			while(scanner.hasNext()){
-//				logger.info(scanner.nextLine());
-//			}
-//			scanner.close();
-//		}
+		Resource resource = new ClassPathResource(fileNameOrRelativeFilePath);
+		if(resource.exists()){
+			Scanner scanner = new Scanner(resource.getInputStream());
+			while(scanner.hasNext()){
+				logger.info(scanner.nextLine());
+			}
+			scanner.close();
+		}
 	}
 	
 	/**
@@ -93,15 +91,15 @@ public class SpringResourceTest {
 	 */
 	public static void readFileByResourceLoader(String file) throws IOException{
 		
-//		ResourceLoader resourceLoader = new DefaultResourceLoader();
-//		Resource resource = resourceLoader.getResource(file);
-//		if(resource.exists()){
-//			Scanner scanner = new Scanner(resource.getInputStream());
-//			while(scanner.hasNext()){
-//				logger.info(scanner.nextLine());
-//			}
-//			scanner.close();
-//		}
+		ResourceLoader resourceLoader = new DefaultResourceLoader();
+		Resource resource = resourceLoader.getResource(file);
+		if (resource.exists()) {
+			Scanner scanner = new Scanner(resource.getInputStream());
+			while (scanner.hasNext()) {
+				logger.info(scanner.nextLine());
+			}
+			scanner.close();
+		}
 	}
 	
 	/**
